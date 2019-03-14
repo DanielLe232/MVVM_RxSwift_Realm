@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'MVVMRxSwiftRealm' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MVVMRxSwiftRealm
+
+  #RxSwift
+  pod 'RxSwift'
+  pod 'RxCocoa'
+
+  #Layout
+  pod 'EasyPeasy'
+
+  #Database
+  pod 'RealmSwift'
+
+  target 'MVVMRxSwiftRealmTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
+  end
+
+  target 'MVVMRxSwiftRealmUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
