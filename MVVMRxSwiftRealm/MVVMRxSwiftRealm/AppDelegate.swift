@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  MVVMRxSwiftRealm
-//
-//  Created by best programmer on 3/14/19.
-//  Copyright © 2019 best programmer. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +8,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if let window = window {
+            let viewModel = ListViewModel(databaseService: DatabaseManager())
+            let viewController = ViewController(viewModel: viewModel)
+            
+            window.rootViewController = UINavigationController(rootViewController: viewController)
+            window.makeKeyAndVisible()
+        }
         return true
     }
 

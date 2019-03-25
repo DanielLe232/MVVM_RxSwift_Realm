@@ -1,11 +1,3 @@
-//
-//  MVVMRxSwiftRealmUITests.swift
-//  MVVMRxSwiftRealmUITests
-//
-//  Created by best programmer on 3/14/19.
-//  Copyright © 2019 best programmer. All rights reserved.
-//
-
 import XCTest
 
 class MVVMRxSwiftRealmUITests: XCTestCase {

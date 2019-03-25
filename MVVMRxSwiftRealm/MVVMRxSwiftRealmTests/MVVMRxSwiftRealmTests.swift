@@ -1,11 +1,3 @@
-//
-//  MVVMRxSwiftRealmTests.swift
-//  MVVMRxSwiftRealmTests
-//
-//  Created by best programmer on 3/14/19.
-//  Copyright © 2019 best programmer. All rights reserved.
-//
-
 import XCTest
 @testable import MVVMRxSwiftRealm
 
